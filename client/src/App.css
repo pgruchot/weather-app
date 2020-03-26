@@ -1,0 +1,11 @@
+@font-face {
+  font-family:"Alexana";
+  src: url("./fonts/alexana/Alexana.ttf") format("truetype");
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
