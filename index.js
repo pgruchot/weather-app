@@ -25,7 +25,7 @@ app.post('/checkweather', ( req, res ) => {
     };
 
     requestPromise(requestOptions).then((weatherData) => {
-        console.log(typeof weatherData)
+        //console.log(typeof weatherData)
         res.json({...weatherData});
         }).catch((err) => {
             console.log("Error while calling the API");

@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import SearchForm from './SearchForm'
 import Temperature from './Temperature'
 
+
 export default class Main extends Component {
     constructor() {
         super();
@@ -30,7 +31,7 @@ export default class Main extends Component {
                 {this.state.response ?
                 <Fragment>
                     <Temperature data={this.state.response} city={this.state.city}/>
-                    <button className="reset-btn" onClick={this.handleButton}></button>
+                    <button className="reset-btn" onClick={this.handleButton}>b </button>
                 </Fragment> 
                  :
                 <SearchForm updateResponse={this.updateResonse}/>

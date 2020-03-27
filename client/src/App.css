@@ -20,10 +20,23 @@
   position: relative;
 }
 .reset-btn {
-
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  transform: translate(-50%,-50%);
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: none;
+  border: 1px solid rgba(0,0,0,0);
+  transition: border 1s;
+  border-radius: 50%;
+}
+.reset-btn:hover {
+  border: 1px solid aquamarine;
+  cursor: pointer;
 }
 .city-search-form{
-  width: 60%;
   margin: 0 auto;
   padding: 5rem;
   text-align: center;
@@ -34,6 +47,7 @@
   left: 50%;
   transform: translate(-50%,-50%);
   display: block;
+  width: 100%;
   font-family: "Gerimist";
   font-size: 5rem;
   font-weight: 500;
@@ -54,6 +68,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0);
   font-family: "Gerimist";
   padding: 10px;
   line-height: 2rem;
@@ -61,10 +76,13 @@
   top: 60%;
   left: 50%;
   transform: translate(-50%,-50%);
+  transition: border 1s;
 }
-.data-wrapper{
+.city-search-form-btn:hover {
+  border: 1px solid aquamarine;
+  cursor: pointer;
+}
 
-}
 .data-city{
   position: absolute;
   top: 30%;
@@ -74,14 +92,33 @@
   font-family: "Gerimist";
   font-size: 5rem;
   font-weight: 500;
+  z-index: 999;
+}
+.data-temp-box {
+  width: 100%;
+  height: 400px;
+}
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .data-temp{
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   display: block;
   font-family: "Alexana";
   font-size: 12rem;
   font-weight: 500;
+  background-color: white;
+  mix-blend-mode: screen;
+  width: 100%;
+  line-height: 100vh;
+  text-align: center;
 }
