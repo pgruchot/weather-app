@@ -21,11 +21,12 @@ app.post('/checkweather', ( req, res ) => {
     const requestOptions = {
         method: 'GET',
         uri: `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`,
+        json: true,
     };
 
     requestPromise(requestOptions).then((weatherData) => {
-        //console.log(res)
-        res.json(weatherData);
+        console.log(typeof weatherData)
+        res.json({...weatherData});
         }).catch((err) => {
             console.log("Error while calling the API");
             console.log(err)
