@@ -16,7 +16,7 @@ app.post('/checkweather', ( req, res ) => {
 
     const { city } = req.body;
     const apiKey = keys.weatherAPI.key;
-    console.log('kekw')
+    
     //Weather request configuration
     const requestOptions = {
         method: 'GET',
@@ -29,7 +29,7 @@ app.post('/checkweather', ( req, res ) => {
         res.json({...weatherData});
         }).catch((err) => {
             console.log("Error while calling the API");
-            console.log(err)
+            //console.log(err)
             res.json({err: 'An error occured. Please try again.'})
         })  
 })
