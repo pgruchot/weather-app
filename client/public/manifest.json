@@ -1,5 +1,5 @@
 {
-  "short_name": "React App",
+  "short_name": "weather-app",
   "name": "Weather App",
   "start_url": ".",
   "display": "standalone",
